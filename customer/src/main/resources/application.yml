@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: customer-service
+  cloud:
+    config:
+      allowOverride: true
+      overrideNone: true
+      overrideSystemProperties: false
+      label: master
+      enabled: false
+    consul:
+      discovery:
+        register: true
+        serviceName: ${spring.application.name}
+        healthCheckPath: /health
+        healthCheckInterval: 1s
+        instanceId: ${spring.application.name}:${server.port}
+    stream:
+      bindings:
+        timesheetEnteredIn:
+          destination: timesheetEntered
+          contentType: application/json
+  rabbitmq:
+    host: 10.4.65.65
+    username: admin
+    password: admin
+
+server:
+  port: 9701
