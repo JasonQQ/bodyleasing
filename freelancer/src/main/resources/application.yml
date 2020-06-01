@@ -12,7 +12,7 @@ spring:
       discovery:
         register: true
         serviceName: ${spring.application.name}
-        healthCheckPath: /health
+        healthCheckPath: /actuator/health
         healthCheckInterval: 1s
         instanceId: ${spring.application.name}:${server.port}
     stream:

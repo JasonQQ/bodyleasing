@@ -44,6 +44,26 @@
       <version>0.6</version>
     </dependency>
     <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+    </dependency>
+    <dependency>
       <artifactId>spring-cloud-stream</artifactId>
       <groupId>org.springframework.cloud</groupId>
     </dependency>
@@ -92,10 +112,9 @@
   <name>customer</name>
 
   <parent>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <groupId>org.springframework.boot</groupId>
-    <relativePath/>
-    <version>2.1.8.RELEASE</version> <!-- lookup parent from repository -->
+    <groupId>com.example</groupId>
+    <artifactId>body-leasing</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
 
   <properties>

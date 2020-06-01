@@ -85,10 +85,9 @@
   <name>project</name>
 
   <parent>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <groupId>org.springframework.boot</groupId>
-    <relativePath/>
-    <version>2.1.8.RELEASE</version> <!-- lookup parent from repository -->
+    <groupId>com.example</groupId>
+    <artifactId>body-leasing</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
 
   <properties>

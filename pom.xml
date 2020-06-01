@@ -16,8 +16,9 @@
     <description>DDD project for BodyLeasing</description>
 
     <modules>
-        <module>freelancer</module>
         <module>customer</module>
+        <module>freelancer</module>
+        <module>project</module>
         <module>common-types</module>
         <module>microarchitecture</module>
         <module>apps</module>
@@ -31,6 +32,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
