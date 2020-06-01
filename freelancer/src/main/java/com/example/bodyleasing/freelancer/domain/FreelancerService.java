@@ -1,5 +1,6 @@
 package com.example.bodyleasing.freelancer.domain;
 
+import com.example.bodyleasing.commontypes.FreelancerId;
 import com.example.bodyleasing.freelancer.event.FreelancerChannels;
 import com.example.bodyleasing.freelancer.event.TimesheetEnteredEvent;
 import lombok.extern.log4j.Log4j2;
@@ -20,7 +21,7 @@ public class FreelancerService {
         this.freelancerChannels = freelancerChannels;
     }
 
-    public void addTimesheet() {
+    public void addTimesheet(FreelancerId freelancerId) {
         log.info("addTimesheet");
         TimesheetEnteredEvent timesheetEnteredEvent = new TimesheetEnteredEvent();
         timesheetEnteredEvent.setTimestamp(new Date());

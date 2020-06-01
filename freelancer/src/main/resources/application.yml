@@ -21,7 +21,8 @@ spring:
           destination: timesheetEntered
           contentType: application/json
   rabbitmq:
-    host: 10.4.65.65
+    host: 10.4.65.55
+    port: 5672
     username: admin
     password: admin
 
