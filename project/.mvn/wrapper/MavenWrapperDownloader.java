@@ -35,8 +35,7 @@ public class MavenWrapperDownloader {
             "https://repo.maven.apache.org/maven2/io/takari/maven-wrapper/0.4.2/maven-wrapper-0.4.2.jar";
 
     /**
-     * Path to the maven-wrapper.properties file, which might contain a downloadUrl property to
-     * use instead of the default one.
+     * Path to the maven-wrapper.properties file, which might contain a downloadUrl property to use instead of the default one.
      */
     private static final String MAVEN_WRAPPER_PROPERTIES_PATH =
             ".mvn/wrapper/maven-wrapper.properties";
